@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style1.css">
+  <!-- <link rel="stylesheet" href="./style2.css"> -->
+  <title>Afiliacion</title>
+</head>
+<body>
+  <h1>Vení al gym 💪🏼</h1>
+  <form action="https://e7a095a7-7764-42fa-92ba-8040e17b328e.mock.pstmn.io/usuario" method="POST">
+    <fieldset>
+      <legend>🙋🏻‍♀️ Datos Personales 👀</legend>
+      <label for="nombre">Nombre:*</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="apellido">Apellido:*</label>
+      <input type="text" id="apellido" name="apellido" required><br>
+
+      <label for="documento">Documento:*</label>
+      <input type="text" id="documento" name="documento" required><br>
+
+      <label for="sexo">Nacionalidad:*</label>
+      <select id="nacionalidad" name="nacionalidad" required>
+        <option value="" disabled selected>Seleccionar</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brasileña">Brasileña</option>
+        <option value="otro">Otro</option>
+      </select><br>
+
+      <label for="descripcion">Contanos un poco de vos...</label>
+      <textarea id="descripcion" name="descripcion" rows="4"></textarea><br>
+
+      <label for="sexo">Sexo:*</label>
+      <input type="radio" name="sexo" id="femenino" value="femenino" required>
+      <label for="femenino">Femenino</label>
+      <input type="radio" name="sexo" id="masculino" value="masculino">
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="sexo" id="otro" value="otro">
+      <label for="otro">Otro</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>📱 Datos de Contacto ✉️</legend>
+      <label for="telefono">Teléfono:</label>
+      <input type="number" id="telefono" name="telefono" placeholder="Código de área y número"><br>
+      <label for="email">Dirección de correo electrónico:*</label>
+      <input type="text" id="email" name="email" placeholder="Ej: mail@gmail.com" required><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>🚴🏻‍♀️ Actividades 🤸🏻‍♀️</legend>
+      <p>Por favor, indicá cuáles actividades te interesan.</p>
+      <p>Sede Palermo:</p>
+      <label for="basquet">
+        <input type="checkbox" id="basquet" name="basquet" value="basquet">
+        Básquet
+      </label><br>
+
+      <label for="boxeo">
+        <input type="checkbox" id="boxeo" name="boxeo" value="boxeo">
+        Boxeo
+      </label><br>
+
+      <label for="futbol">
+      <input type="checkbox" id="futbol" name="futbol" value="futbol">
+        Fútbol
+      </label><br>
+
+      <label for="tenis">
+        <input type="checkbox" id="tenis" name="tenis" value="tenis">
+        Tenis
+      </label>
+
+      <p>Sede Rosario:</p>
+      <label for="basquet">
+        <input type="checkbox" id="basquet" name="basquet" value="basquet">
+        Básquet
+      </label><br>
+
+      <label for="futbol">
+        <input type="checkbox" id="futbol" name="futbol" value="futbol">
+        Fútbol
+        </label><br>
+
+      <label for="rugby">
+        <input type="checkbox" id="rugby" name="rugby" value="rugby">
+        Rugby
+      </label><br>
+
+      <label for="voley">
+        <input type="checkbox" id="voley" name="voley" value="voley">
+        Voley
+      </label>
+
+    </fieldset>
+
+    <label for="condiciones">
+      <input type="checkbox" id="condiciones" name="condiciones" value="true" required>
+      Acepto las condiciones*
+    </label>
+
+    <label for="novedades">
+      <input type="checkbox" id="novedades" name="novedades" value="true">
+      Deseo recibir novedades
+    </label>
+
+    <p>*: Campo obligatorio</p>
+
+    <div>
+      <button type="submit">Iniciar afiliación</button>
+      <button type="reset">Restablecer</button>
+    </div>
+  </form>
+</body>
+</html>
