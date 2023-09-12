@@ -1,0 +1,106 @@
+body {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.2)),url(./fitness-594143_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 99%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  margin-right: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+/* Estilo para el mensaje de campo obligatorio */
+p.required-msg {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Estilo para los íconos de actividades */
+fieldset legend::before {
+  content: attr(emoji);
+  margin-right: 10px;
+}
+
+/* Estilo para el botón de checkbox Acepto las condiciones y Deseo recibir novedades */
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Estilo para los checkboxes seleccionados */
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+div {
+
+}
